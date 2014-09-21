@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+
+    "name": "Fix regis course schedules",
+    "description": "Course schedules are unreadable in google chrome",
+    "version": "1.0",
+
+    "permissions": [
+        "http://schedules.caltech.edu/"
+    ],
+    "content_scripts": [ {
+        "css": [ "trheight.css" ],
+        "matches": [ "http://schedules.caltech.edu/*.html" ]
+    } ]
+}
